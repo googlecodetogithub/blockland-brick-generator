@@ -35,15 +35,15 @@ public class BrickMaker
 		if (Height / 3f == Length && Length == Width && Height >= 12) //It's a Cube!
 		{
 			Category = "Baseplates"; //Cubes are in the baseplates category, kind of ironic.
-			subCategory = "Cubes"; //It's a Cube! Wait, I already said that...
+			subCategory = "Cube"; //It's a Cube! Wait, I already said that...
 			UiName = Width + "x Cube"; //Since all dimensions, you dont need to display all 3.
 			FileName = Width + "x" + Length + "x" + Height; //Regular file name
 		}
 		else if (Width > 15 && Length > 15 && Height == 1) //Check if it's a Baseplate.
 		{
 			Category = "Baseplates"; //It goes in the baseplates section. (Obviously)
-			subCategory = Category; //It also goes in the same sub-category.
-			UiName = Width + "x" + Length + " Baseplate"; //Baseplates in the name, no "f" extension.
+			subCategory = "Plain"; //It goes in "Plain".
+			UiName = Width + "x" + Length + " Base"; //Base in the name, no "f" extension.
 			FileName = Width + "x" + Length + "x" + Height; //Regular file name
 		}
 		else if (Height != 1) //Check if the brick is not a plate
